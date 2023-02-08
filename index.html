@@ -47,18 +47,231 @@
   <body id="myBody" style="position: relative;">
     <!-- Header -->
     <header>
+        <div class="header-inner">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg px-0">
+                <a class="navbar-brand" href="#">
+                  Farmstead
+                  <span><i class="fa-solid fa-leaf"></i></span>
+                </a>
+                <div class="navbar ml-lg-auto" id="navbarSupportedContent">
+                  <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item mx-1">
+                      <a class="nav-link icon-search" id="icon-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="" id="input-search">
+                        <i class="fa-solid fa-xmark"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                      <a class="nav-link" id="switchButton">
+                        <i class="fa-regular fa-moon moon"></i>
+                        <i class="fa-solid fa-sun sun"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item mx-1 dropdown">
+                      <a
+                        class="nav-link icon-dropdown"
+                        id="icon-dropdown"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-bars"></i>
+                      </a>
+                      <div class="dropdown-menu text-center py-0" id="dropdown-menu">
+                        <a class="dropdown-item active" href="#">HOME</a>
+                        <a class="dropdown-item" href="#">ABOUT</a>
+                        <a class="dropdown-item" href="#">SERVICES</a>
+                        <a class="dropdown-item" href="#">BLOG POSTS</a>
+                        <a class="dropdown-item" href="#">LANDING PAGE</a>
+                        <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                        <a class="dropdown-item" href="#">404 PAGE</a>
+                        <a class="dropdown-item" href="#">CONTACT</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
     </header>
 
     <!-- Section farmCarousel -->
     <section class="farmCarousel">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center position-relative">
+              <div class="col-md-5 carousel-left">
+                <h1>Welcome to Farmstead where Natural Food is born!</h1>
+                <span>Farm</span>
+                <p class="mt-4 mb-4 mb-sm-5">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+                <button class="btn">LEARN MORE</button>
+              </div>
+    
+              <div class="col-md-7 carousel-right ml-auto p-0 position-relative">
+                <div
+                  id="carouselExampleCaptions"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="1"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="2"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item overflow-hidden position-relative active">
+                      <img src="./img/b1.jpg" class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-md-inline">
+                        <h5>01<span>/03</span></h5>
+                        <p>Agriculture</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item overflow-hidden position-relative">
+                      <img src="./img/b8.jpg" class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-md-inline">
+                        <h5>02<span>/03</span></h5>
+                        <p>Farm Field</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item overflow-hidden position-relative">
+                      <img src="./img/b4.jpg" class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-md-inline">
+                        <h5>03<span>/03</span></h5>
+                        <p>Organic Farm</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Section field -->
     <section class="field">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-12 col-lg-6 field-left">
+                <p class="titlePara">Grow Naturally</p>
+                <h2 class="headingPara">Leaders in the field</h2>
+                <p class="para">
+                  Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
+                  nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
+                  eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                  Suspendisse non init magnaa velit efficitur, dolor eget ex
+                  fermentum.
+                </p>
+                <div class="btn mb-5">DISCOVER MORE</div>
+              </div>
+    
+              <div class="col-md-12 col-lg-6 field-right">
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="col-12 col-sm-6 mb-4 field-item">
+                    <div class="card">
+                      <img src="./img/img4.png" class="card-img-top" alt="..." />
+                      <p>Natural Products</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-4 field-item">
+                    <div class="card">
+                      <img src="./img/img2.png" class="card-img-top" alt="..." />
+                      <p>Wheat Cultivation</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-4 field-item">
+                    <div class="card">
+                      <img src="./img/img1.png" class="card-img-top" alt="..." />
+                      <p>Modern Truck</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-4 field-item">
+                    <div class="card">
+                      <img src="./img/img3.png" class="card-img-top" alt="..." />
+                      <p>Organic Products</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Section choose -->
     <section class="choose">
+        <div class="container">
+            <div class="choose-top position-relative">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-6 choose-title">
+                  <p class="titlePara">What we do</p>
+                  <h2 class="headingPara">Why Choose Our Fresh Organic Foods</h2>
+                </div>
+                <span class="col-md-6">
+                  Sed ut perspiciatis unde omnis iste natus error sit accusantium
+                  doloremque, eaque ipsa quae ab illo inventore.Sed ut perspiciatis
+                  unde omnis iste natus error sit.
+                </span>
+              </div>
+              <span class="choose-big-desc">Services</span>
+            </div>
+            <div class="choose-bottom">
+              <div class="row row-cols-1 row-cols-md-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                  <div class="card h-100 choose-item">
+                    <img src="./img/service1.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <span>Natural</span>
+                      <h5 class="card-title">Agriculture Products</h5>
+                      <p class="card-text">
+                        Sed ut perspiciatis unde omnis iste natus sit accusantium
+                        doloremque laudantium, totam rem aperiam
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                  <div class="card h-100 choose-item">
+                    <img src="./img/service2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <span>Agriculture</span>
+                      <h5 class="card-title">Fresh Vegetables</h5>
+                      <p class="card-text">
+                        Sed ut perspiciatis unde omnis iste natus sit accusantium
+                        doloremque laudantium, totam rem aperiam
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mx-md-auto col-lg-4 mb-4">
+                  <div class="card h-100 choose-item">
+                    <img src="./img/service3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <span>Farm</span>
+                      <h5 class="card-title">Organic Products</h5>
+                      <p class="card-text">
+                        Sed ut perspiciatis unde omnis iste natus sit accusantium
+                        doloremque laudantium, totam rem aperiam
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Section quality -->
