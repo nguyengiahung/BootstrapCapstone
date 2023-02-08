@@ -323,6 +323,115 @@ header .nav-item .dropdown-item:hover {
     top: 0;
 }
 
+<<<<<<< HEAD
+/* field */
+.field {
+    padding: 90px 0;
+}
+
+.field .para {
+    margin: 20px 0 40px 0;
+}
+
+.field .field-left {
+    padding-right: 45px;
+}
+
+.field .field-right .field-item {
+    padding: 0 10px;
+}
+
+.field .card {
+    padding: 30px 35px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 20px 30px;
+    transition: all 0.3s;
+}
+
+.field .card img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+}
+
+.field .card p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.field .field-right .card:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+} 
+
+/* choose */
+.choose {
+    padding: 90px 0;
+    background-color: var(--secondary-color);
+}
+
+.choose .choose-title p, .choose .choose-title h2 {
+    color: #fff;
+    line-height: 1.4;
+}
+
+.choose .choose-top span {
+    color: #fff;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.choose .choose-top .choose-big-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 200px;
+    opacity: 0.15;
+    font-family: var(--primary-font)
+}
+
+.choose .choose-bottom {
+    margin-top: 72px;
+}
+
+.choose .choose-item {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.choose .choose-item .card-body {
+    padding: 30px 20px;
+}
+
+.choose .choose-item h5 {
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.choose .choose-item p {
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+}
+
+.choose .choose-item span {
+    background-color: rgba(0, 159, 77, 0.15);
+    color: var(--secondary-color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+}
+
+=======
+>>>>>>> cf233d171771c8660655ffe467027ac44878062b
 /* ----------------- RESPONSIVE ----------------*/
 
 @media screen and (max-width: 1199.98px) {
@@ -345,12 +454,37 @@ header .nav-item .dropdown-item:hover {
     .farmCarousel .carousel-left h1 {
         font-size: 35px;
     }
+<<<<<<< HEAD
+
+    /* field */
+    .field .card {
+        padding: 40px 40px;
+    }
+
+    /* choose */
+    .choose .choose-top .choose-big-desc {
+        font-size: 120px;
+    }
+    .choose .choose-bottom {
+        margin-top: 50px;
+    }
+=======
+>>>>>>> cf233d171771c8660655ffe467027ac44878062b
 }
 
 @media screen and (max-width: 991.98px) {
     .container {
         max-width: 720px;
     }
+<<<<<<< HEAD
+    .field .field-left {
+        padding-right: 0;
+    }
+    .field .card {
+        padding: 20px;
+    }
+=======
+>>>>>>> cf233d171771c8660655ffe467027ac44878062b
     .titlePara {
         font-size: 18px;
     }
@@ -426,5 +560,17 @@ header .nav-item .dropdown-item:hover {
     }
     .dark .navbar-scroll .navbar-brand {
         color: var(--primary-color);
+    }
+    
+    .field {
+        padding: 90px 0 50px;
+    }
+    .choose {
+        padding: 60px 0 50px;
+    }
+    .field .para {
+        font-size: 15px;
+        width: 90%;
+        line-height: 1.7;
     }
 }
