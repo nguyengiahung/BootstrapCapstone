@@ -676,6 +676,221 @@ header .nav-item .dropdown-item:hover {
     color: var(--primary-color);
 }
 
+/* Footer */
+footer {
+    padding: 80px 0;
+}
+
+footer p, footer .copyright {
+    font-size: 17px;
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+}
+
+footer .copyright a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+footer .copyright a:hover {
+    color: var(--primary-color);
+}
+
+footer .footer-desc {
+    margin: 20px 0 40px 0;
+}
+
+footer h4 {
+    line-height: 20px;
+}
+
+footer .navbar-brand {
+    font-size: 32px;
+    position: relative;
+    color: var(--primary-color);
+    transition: all 0.4s;
+}
+
+footer .navbar-brand span {
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+}
+
+footer .navbar-brand:hover {
+    color: var(--black-color);
+}
+
+footer .footer-input input {
+    padding: 13px 20px;
+    outline: none;
+    border: 1px solid #eee;
+    background-color: #eee;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    width: 260px;
+}
+
+footer .footer-input input:placeholder-shown {
+    font-family: var(--secondary-font);
+}
+
+footer .footer-input i {
+    color: #fff;
+    background-color: var(--secondary-color);
+    padding: 18px 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin: -5px;
+    transition: all 0.3s;
+}
+
+footer .footer-input i:hover {
+    background-color: var(--secondary-color);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+footer li {
+    margin-right: 8px;
+}
+
+footer li a {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(10 191 83 / 8%);
+    color: var(--secondary-color);
+    transition: all 0.4s;
+}
+
+footer li a:hover {
+    color: var(--primary-color);
+    background: rgb(255 201 69 / 19%);
+    text-decoration: none;
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+
+/* Back to top */
+.back-to-topUp {
+    position: fixed;
+    bottom: 65px;
+    right: 15px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-topUp i {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.back-to-topUp:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.nav-link .sun {
+    display: none;
+}
+
+/* Dark Mode */
+.dark#myBody {
+    background-color: var(--bg-dark);
+}
+
+.dark .nav-link .sun {
+    display: block;
+}
+
+.dark .nav-link .moon {
+    display: none;
+}
+
+.dark .farmCarousel .carousel-left span {
+    color: var(--black-color);
+}
+
+.dark .farmCarousel .carousel-left h1,
+.dark .headingPara,
+.dark .choose-item h5,
+.dark .quality-info h5,
+.dark .farmFeature .card-body h5,
+.dark .footer-heading,
+.dark .navbar-scroll .nav-item #switchButton i,
+.dark .navbar-scroll .nav-item #icon-dropdown i,
+.dark .navbar-scroll .navbar-brand,
+.dark .navbar-brand:hover {
+    color: #fff;
+}
+
+.dark .farmCarousel .carousel-left p,
+.dark .para,
+.dark .choose-item p,
+.dark .quality-info p,
+.dark .farmFeature .card-body p,
+.dark footer p,
+.dark footer span {
+    color: var(--text-light);
+}
+
+.dark .choose-item .card-body,
+.dark .farmFeature .card,
+.dark .navbar-scroll {
+    background-color: var(--bg-dark);
+}
+
+.dark .field .card {
+    background-color: var(--bg-dark);
+    color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.34);
+}
+
+.dark .footer-input input {
+    background-color: #0b0d0e;
+    border: 1px solid #474747;
+}
+
+.dark .farmFeature .card:hover h5 {
+    color: var(--secondary-color);
+}
+
+.dark footer .navbar-brand span {
+    color: var(--primary-color);
+}
+
+.dark header .dropdown-menu {
+    background-color: var(--bg-dark);
+}
+
+.dark header .dropdown-item {
+    color: #fff;
+}
+
 /* ----------------- RESPONSIVE ----------------*/
 
 @media screen and (max-width: 1199.98px) {
@@ -722,6 +937,9 @@ header .nav-item .dropdown-item:hover {
         background-position: top left;
         background-size: 150%;
     }
+    footer .footer-input input {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 991.98px) {
@@ -746,6 +964,12 @@ header .nav-item .dropdown-item:hover {
     }
     .farmSlider .farm-person {
         padding-left: 0;
+    }
+    .footer-container {
+        gap: 30px 0;
+    }
+    .footer-container .col-lg-4:nth-child(2) {
+        order: 3;
     }
 }
 
@@ -859,5 +1083,8 @@ header .nav-item .dropdown-item:hover {
     }
     .products {
         padding: 10px 0 90px;
+    }
+    footer .footer-input input {
+        width: 250px;
     }
 }
