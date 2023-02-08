@@ -323,7 +323,6 @@ header .nav-item .dropdown-item:hover {
     top: 0;
 }
 
-<<<<<<< HEAD
 /* field */
 .field {
     padding: 90px 0;
@@ -430,8 +429,108 @@ header .nav-item .dropdown-item:hover {
     font-family: var(--secondary-font);
 }
 
-=======
->>>>>>> cf233d171771c8660655ffe467027ac44878062b
+/* quality */
+.quality {
+    padding: 90px 0 120px;
+}
+
+.quality .quality-info {
+    margin-top: 80px;
+}
+
+.quality .quality-info .row {
+    flex-wrap: nowrap;
+}
+
+.quality .quality-info i {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-right: 10px;
+    margin-left: 13px;
+}
+
+.quality .quality-info h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.quality .quality-info p {
+    font-size: 17px;
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+}
+
+.quality .quality-image {
+    padding-left: 100px;
+}
+
+.quality .quality-image img {
+    border-radius: 25px;
+}
+
+.quality .quality-year {
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    background-color: var(--primary-color);
+    padding: 40px 60px;
+    border-bottom-right-radius: 100px;
+    color: #fff;
+    box-shadow: 15px 20px 50px 0px rgb(0 0 0 / 25%);
+} 
+
+.quality .quality-year p {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.quality .quality-year span {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+}
+
+/* farmFeature */
+.farmFeature .card {
+    border: 1px solid transparent;
+    padding: 30px 20px;
+    margin-bottom: 50px;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.farmFeature .card:hover {
+    border: 1px solid #c7c6c6;
+    cursor: pointer;
+}
+
+.farmFeature img {
+    max-width: 100%;
+    height: auto;
+} 
+
+.farmFeature .card-body {
+    padding: 0;
+}
+
+.farmFeature .card-body h5 {
+    font-weight: 600;
+    font-size: 22px;
+    transition: all 0.5s;
+}
+
+.farmFeature .card:hover h5 {
+    color: var(--secondary-color);
+}
+
+.farmFeature .card-body p {
+    font-family: var(--secondary-font);
+    font-size: 17px;
+    color: var(--text-color);
+}
+
 /* ----------------- RESPONSIVE ----------------*/
 
 @media screen and (max-width: 1199.98px) {
@@ -454,7 +553,6 @@ header .nav-item .dropdown-item:hover {
     .farmCarousel .carousel-left h1 {
         font-size: 35px;
     }
-<<<<<<< HEAD
 
     /* field */
     .field .card {
@@ -468,28 +566,33 @@ header .nav-item .dropdown-item:hover {
     .choose .choose-bottom {
         margin-top: 50px;
     }
-=======
->>>>>>> cf233d171771c8660655ffe467027ac44878062b
+    .quality .quality-info h5 {
+        font-size: 20px;
+    }
+    .farmFeature .card-body h5 {
+        font-size: 19px;
+    }
 }
 
 @media screen and (max-width: 991.98px) {
     .container {
         max-width: 720px;
     }
-<<<<<<< HEAD
     .field .field-left {
         padding-right: 0;
     }
     .field .card {
         padding: 20px;
     }
-=======
->>>>>>> cf233d171771c8660655ffe467027ac44878062b
     .titlePara {
         font-size: 18px;
     }
     .headingPara {
         font-size: 32px;
+    }
+    .quality .quality-info {
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
 }
 
@@ -572,5 +675,8 @@ header .nav-item .dropdown-item:hover {
         font-size: 15px;
         width: 90%;
         line-height: 1.7;
+    }
+    .quality .quality-image {
+        padding-left: 15px;
     }
 }
