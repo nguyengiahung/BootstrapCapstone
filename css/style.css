@@ -1,0 +1,430 @@
+:root {
+    --primary-color: #fb811e;
+    --secondary-color: #009f4d;
+    --black-color: #060606;
+    --text-color: #707070;
+    --primary-font: 'Volkhov', sans-serif;
+    --secondary-font: 'Source Sans Pro', sans-serif;
+    --bg-dark: #222222;
+    --text-light: #b7b7b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Volkhov', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Common CSS */
+.btn {
+    color: #fff;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 14px 33px;
+    transition: all 0.3s linear;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.titlePara {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.headingPara {
+    font-size: 40px;
+    color: var(--black-color);
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.para {
+    font-size: 17px;
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Header */
+header .header-inner {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 9999;
+}
+
+.header-inner .navbar {
+    transition: all 0.5s;
+    padding: 12px 0;
+}
+
+.header-inner .navbar-brand {
+    font-size: 32px;
+    position: relative;
+    color: var(--primary-color);
+    transition: all 0.4s;
+}
+
+.header-inner .nav-link {
+    cursor: pointer;
+}
+
+.header-inner .navbar-brand span {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+
+.header-inner .nav-link i {
+    color: #ffffff;
+    font-size: 22px;
+    margin: 0 1px;
+}
+
+.header-inner .navbar-brand:hover {
+    color: var(--black-color);
+}
+
+.header-inner .navbar-nav {
+    flex-direction: row;
+}
+
+.header-inner .dropdown {
+    position: relative;
+    top: 2px;
+}
+
+.header-inner .dropdown i {
+    font-size: 28px;
+}
+
+/* Header Search */
+.header-inner .icon-search {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 36px;
+    height: 36px;
+    display:flex;
+    align-items: center;
+    border: 1px solid #eee;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.header-inner .icon-search i {
+    color: #000;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.header-inner #input-search {
+    border: none;
+    outline: none;
+    font-family: var(--secondary-font);
+    width: 100px;
+    transform: translateX(-50px);
+    background-color: transparent;
+}
+
+.header-inner .icon-search:focus-within {
+    width: 200px;
+}
+
+.header-inner .icon-search:focus-within #input-search {
+    transform: translateX(0px);
+}
+
+.header-inner #input-search ~ i {
+    margin-left: auto;
+    opacity: 0;
+}
+
+.header-inner #input-search:valid ~ i {
+    opacity: 1;
+}
+
+/* Header Scroll Change */
+header .navbar-scroll {
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 9999;
+    transition: all 0.5s;
+}
+
+header .navbar-scroll .navbar {
+    padding: 8px 0;
+}
+
+header .navbar-scroll .navbar-brand {
+    color: #000;
+}
+
+.navbar-scroll .nav-item i {
+    color: #000;
+}
+
+/* Header menu bar */
+header .nav-item .dropdown-menu {
+    top: 100%;
+    left: -190px;
+    border: none;
+    width: 220px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.04);
+    transition: all 1s linear;
+    overflow: hidden;
+}
+
+header .nav-item .dropdown-item {
+    font-family: var(--secondary-font);
+    color: var(--black-color);
+    font-weight: 600;
+    transition: all 0.4s;
+    padding: 7px 0;
+}
+
+header .nav-item .dropdown-item.active {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+header .nav-item .dropdown-item:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+
+/* farmCarousel */
+.farmCarousel .carousel-inner {
+    border-bottom-left-radius: 20px;
+}
+
+.farmCarousel .carousel-item img {
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    height: 100vh;
+    object-fit: cover;
+} 
+
+.farmCarousel .carousel-left {
+    position: absolute;
+    margin-left: 12vw;
+    z-index: 9;
+    padding-left: 0;
+}
+
+.farmCarousel .carousel-left h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.farmCarousel .carousel-left span {
+    position: absolute;
+    top: -100px;
+    left: -60px;
+    font-size: 120px;
+    color: #f4f4f4;
+    z-index: -99;
+    font-weight: bold;
+}
+
+.farmCarousel .carousel-left p {
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.farmCarousel .carousel-indicators li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background-color: #fff; 
+    opacity: 1;
+}
+
+.farmCarousel .carousel-indicators li.active {
+    background-color: var(--primary-color);
+}
+
+.farmCarousel .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+} 
+
+.farmCarousel .carousel-caption h5 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.farmCarousel .carousel-caption p {
+    font-family: var(--secondary-font);
+    font-size: 17px;
+}
+
+.farmCarousel .carousel-caption span {
+    font-size: 20px;
+}
+
+.farmCarousel .carousel-right::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 17%);
+    z-index: 5;
+    border-bottom-left-radius: 20px;
+    top: 0;
+}
+
+/* ----------------- RESPONSIVE ----------------*/
+
+@media screen and (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    /* farmCarousel */
+    .farmCarousel .carousel-caption {
+        right: 2%;
+    }
+    .farmCarousel .carousel-left span {
+        font-size: 90px;
+        top: -80px;
+        left: -50px;
+    }
+    .farmCarousel .carousel-left p {
+        font-size: 17px;
+    }
+    .farmCarousel .carousel-left h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    .titlePara {
+        font-size: 18px;
+    }
+    .headingPara {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header-inner .icon-search i {
+        margin-left: 10px;
+    }
+    .farmCarousel .carousel-left {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    .farmCarousel .carousel-left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        padding: 5em 3em 2em 4em;
+        margin: 0;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .farmCarousel .carousel-left span {
+        font-size: 80px;
+        top: 0px;
+        left: 15px;
+    }
+    .farmCarousel .carousel-left h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+    .header-inner .navbar-brand {
+        color: #fff;
+    }
+    header .navbar-scroll .navbar-brand {
+        color: var(--primary-color);
+    }
+    .header-inner .icon-search i {
+        margin-left: 10px;
+    }
+    .farmCarousel .carousel-left span {
+        font-size: 60px;
+        top: 10px;
+        left: 10px;
+    }
+    .farmCarousel .carousel-left p {
+        font-size: 16px;
+    }
+    .farmCarousel .carousel-left h1 {
+        font-size: 25px;
+    }
+    .farmCarousel .carousel-left {
+        padding: 4em 2em 2em 2em;
+    }
+
+    .dark .farmCarousel .carousel-left {
+        background-color: var(--bg-dark);
+    }
+    .dark .navbar-scroll .navbar-brand {
+        color: var(--primary-color);
+    }
+}

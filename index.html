@@ -47,10 +47,119 @@
   <body id="myBody" style="position: relative;">
     <!-- Header -->
     <header>
+        <div class="header-inner">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg px-0">
+                <a class="navbar-brand" href="#">
+                  Farmstead
+                  <span><i class="fa-solid fa-leaf"></i></span>
+                </a>
+                <div class="navbar ml-lg-auto" id="navbarSupportedContent">
+                  <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item mx-1">
+                      <a class="nav-link icon-search" id="icon-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="" id="input-search">
+                        <i class="fa-solid fa-xmark"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                      <a class="nav-link" id="switchButton">
+                        <i class="fa-regular fa-moon moon"></i>
+                        <i class="fa-solid fa-sun sun"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item mx-1 dropdown">
+                      <a
+                        class="nav-link icon-dropdown"
+                        id="icon-dropdown"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-bars"></i>
+                      </a>
+                      <div class="dropdown-menu text-center py-0" id="dropdown-menu">
+                        <a class="dropdown-item active" href="#">HOME</a>
+                        <a class="dropdown-item" href="#">ABOUT</a>
+                        <a class="dropdown-item" href="#">SERVICES</a>
+                        <a class="dropdown-item" href="#">BLOG POSTS</a>
+                        <a class="dropdown-item" href="#">LANDING PAGE</a>
+                        <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                        <a class="dropdown-item" href="#">404 PAGE</a>
+                        <a class="dropdown-item" href="#">CONTACT</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
     </header>
 
     <!-- Section farmCarousel -->
     <section class="farmCarousel">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center position-relative">
+              <div class="col-md-5 carousel-left">
+                <h1>Welcome to Farmstead where Natural Food is born!</h1>
+                <span>Farm</span>
+                <p class="mt-4 mb-4 mb-sm-5">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+                <button class="btn">LEARN MORE</button>
+              </div>
+    
+              <div class="col-md-7 carousel-right ml-auto p-0 position-relative">
+                <div
+                  id="carouselExampleCaptions"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="1"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="2"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item overflow-hidden position-relative active">
+                      <img src="./img/b1.jpg" class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-md-inline">
+                        <h5>01<span>/03</span></h5>
+                        <p>Agriculture</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item overflow-hidden position-relative">
+                      <img src="./img/b8.jpg" class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-md-inline">
+                        <h5>02<span>/03</span></h5>
+                        <p>Farm Field</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item overflow-hidden position-relative">
+                      <img src="./img/b4.jpg" class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-md-inline">
+                        <h5>03<span>/03</span></h5>
+                        <p>Organic Farm</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Section field -->
